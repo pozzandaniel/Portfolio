@@ -1,5 +1,5 @@
 nav{
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 1);
     height: 86px;
     display: flex;
     justify-content: space-between;
@@ -17,6 +17,7 @@ nav{
         padding-right: 120px;
         display: flex;
         font-family: 'Inter';
+        font-weight: 500;
 
         li{
             list-style: none;
