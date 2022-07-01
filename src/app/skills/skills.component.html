@@ -1,22 +1,23 @@
 <div id="skills-container">
     <p>MY Skills</p>
     <div class="skills-row">
-        <div class="skill-box">
-            <div class="logo-container"><img src="./assets/img/icons/js.png" alt=""></div>
-            <p>JavaScript</p>
+        <div *ngFor="let i of [0, 1, 2]" class="skill-box">
+            <div class="logo-container"><img src="./assets/img/icons/{{ logos[i] }}" alt=""></div>
+            <p>{{ skills[i] }}</p>
         </div>
-        <div class="skill-box"></div>
-        <div class="skill-box"></div>
     </div>
     <div class="skills-row">
-        <div class="skill-box"></div>
-        <div class="skill-box"></div>
-        <div class="skill-box"></div>
+        <div *ngFor="let i of [3, 4, 5]" class="skill-box">
+            <div class="logo-container"><img src="./assets/img/icons/{{ logos[i] }}" alt=""></div>
+            <p>{{ skills[i] }}</p>
+        </div>
     </div>
     <div class="skills-row">
-        <div class="skill-box"></div>
-        <div class="skill-box"></div>
-        <div class="skill-box"></div>
+        <div *ngFor="let i of [6, 7, 8]" class="skill-box">
+            <div class="logo-container"><img src="./assets/img/icons/{{ logos[i] }}" alt=""></div>
+            <p>{{ skills[i] }}</p>
+        </div>
     </div>
+ 
     
 </div>
