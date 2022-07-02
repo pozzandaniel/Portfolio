@@ -6,10 +6,11 @@
         <div (click)="getJavascript()" (click)="toggleJavascriptIsActive()" [@toggle]="javascriptIsActive" class="filter-element">Java Script</div>
     </div>
     <div class="projects-box">
-        <div class="project-card" *ngIf="javascript" >{{ projects[0].title }}</div>
-        <div class="project-card" *ngIf="javascript">{{ projects[1].title }}</div>
-        <div class="project-card" *ngIf="angular">{{ projects[2].title }}</div>
-        <div class="project-card" *ngIf="angular">{{ projects[3].title }}</div>
-        
+        <div class="project-card" *ngIf="javascript" @fadeInOutLeft >{{ projects[0].title }}</div>
+        <div class="project-card" *ngIf="javascript" @fadeInOutLeft>{{ projects[1].title }}</div>   
+    </div>
+    <div class="projects-box">
+        <div class="project-card" *ngIf="angular" @fadeInOutRight>{{ projects[2].title }}</div>
+        <div class="project-card" *ngIf="angular" @fadeInOutRight>{{ projects[3].title }}</div>
     </div>
 </div>

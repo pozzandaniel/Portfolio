@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { trigger, state, style, animate, transition } from '@angular/animations';
+import { trigger, state, style, animate, transition, keyframes } from '@angular/animations';
 
 @Component({
   selector: 'app-portfolio',
@@ -14,10 +14,55 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
 
       transition('active <=> inactive', animate('100ms ease-in-out'))
      
-    ])
+    ]),
+
+    trigger('fadeInOutRight', [
+
+      transition(':leave', [
+        style({transform: 'scale(1.0) translateX(0)'}),
+        animate('1s ease-out', keyframes([
+          style({transform:'scale(1.02) translateX(0)', offset:0.2}),
+          style({transform:'scale(1.04) translateX(0)', offset:0.4}),
+          style({transform: 'scale(1.04) translateX(200px)', offset:0.8})
+        ]))
+      ]),
+
+      transition(':enter', [
+        style({transform: 'scale(1.04) translateX(200px)'}),
+        animate('1s ease-in-out', keyframes([
+          style({transform: 'scale(1.04) translateX(200px)', offset: 0.2}),
+          style({trasnform: 'scale(1.02) translateX(0)', offset: 0.4}),
+          style({transform: 'scale(1) translateX(0)', offset: 0.8})
+        ]))
+      ])
+    ]),
+
+    trigger('fadeInOutLeft', [
+
+      transition(':leave', [
+        style({transform: 'scale(1.0) translateX(0)'}),
+        animate('1s ease-out', keyframes([
+          style({transform:'scale(1.02) translateX(0)', offset:0.2}),
+          style({transform:'scale(1.04) translateX(0)', offset:0.4}),
+          style({transform: 'scale(1.04) translateX(-200px)', offset:0.8})
+        ]))
+      ]),
+
+      transition(':enter', [
+        style({transform: 'scale(1.04) translateX(-200px)'}),
+        animate('1s ease-in-out', keyframes([
+          style({transform: 'scale(1.04) translateX(-200px)', offset: 0.2}),
+          style({trasnform: 'scale(1.02) translateX(0)', offset: 0.4}),
+          style({transform: 'scale(1) translateX(0)', offset: 0.8})
+        ]))
+      ])
+    ]),
+
+    
+
   ],
 })
-
+  
 
 export class PortfolioComponent implements OnInit {
   elPolloLoco = new Project('El Pollo Loco', 'Javascript');
