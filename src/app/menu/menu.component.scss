@@ -13,21 +13,28 @@ nav{
     }
 
     .list-case{
-        color: white;
         padding-right: 120px;
         display: flex;
-        font-family: 'Inter';
-        font-weight: 500;
+        
 
-        li{
+        li {
             list-style: none;
             margin-left: 15px;
             margin-right: 15px;
             cursor: pointer;
 
-            &:hover{
-                color: #fa2759;
+            a{
+                text-decoration: none;
+                color: white;
+                font-family: 'Inter';
+                font-weight: 500;
+
+                &:hover{
+                    color: #fa2759;
+                }
             }
+
+           
         }
     }
 }

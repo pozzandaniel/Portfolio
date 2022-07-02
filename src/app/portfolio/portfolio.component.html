@@ -1,0 +1,15 @@
+<div class="container" id="portfolio">
+    <p>My Work</p>
+    <div class="filter-box">
+        <div (click)="getAll()"  (click)="toggleAllIsActive()" [@toggle]="allIsActive" class="filter-element">All</div>
+        <div (click)="getAngular()" (click)="toggleAngularIsActive()" [@toggle]="angularIsActive" class="filter-element">Angular</div>
+        <div (click)="getJavascript()" (click)="toggleJavascriptIsActive()" [@toggle]="javascriptIsActive" class="filter-element">Java Script</div>
+    </div>
+    <div class="projects-box">
+        <div class="project-card" *ngIf="javascript" >{{ projects[0].title }}</div>
+        <div class="project-card" *ngIf="javascript">{{ projects[1].title }}</div>
+        <div class="project-card" *ngIf="angular">{{ projects[2].title }}</div>
+        <div class="project-card" *ngIf="angular">{{ projects[3].title }}</div>
+        
+    </div>
+</div>

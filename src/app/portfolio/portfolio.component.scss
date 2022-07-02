@@ -1,0 +1,56 @@
+.container{
+    // height: 777px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    p{
+        margin-top: 0;
+        font-family: 'Inter';
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 40px;
+        color: white;
+    }
+
+    .filter-box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
+       
+        .filter-element{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 128px;
+            height: 70px;
+            border: 2px solid #FA2759;
+            font-family: 'Inter';
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 20px;
+            color: white;
+            cursor: pointer;
+        }
+    }
+
+    .projects-box{
+        // width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        .project-card{
+            background-color: white;
+            margin: 20px;
+            width: 442px;
+            height: 367px;
+        }
+    }
+}
