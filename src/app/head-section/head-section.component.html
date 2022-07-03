@@ -1,14 +1,17 @@
-<div id="headSection" class="container">
-    <div class="link-box">
-        <p>Hi,<br> I'm <span class="purple">Daniel</span> Pozzan<br> Front End develop<span class="bluegreen">e</span>r</p>
-        <a href="#contact"><button>Contact me</button></a>
+<div class="container">
+    <div id="headSection" class="top-case">
+        <div class="link-box">
+            <p>Hi,<br> I'm <span class="purple">Daniel</span> Pozzan<br> Front End develop<span class="bluegreen">e</span>r</p>
+            <a href="#contact"><button>Contact me</button></a>
+        </div>
+        <div class="right-box">
+            <img src="./assets/img/photo.jpg" alt="">
+        </div>
+        
     </div>
-    <div class="right-box">
-        <img src="./assets/img/photo.jpg" alt="">
+    <div class="expand-button">
+        <a href="#skills-container"><img (mouseover)="bluegreenColor()" (mouseleave)="whiteColor()" src="./assets/img/icons/{{ img }}" alt=""></a>
+        
     </div>
-    
-</div>
-<div class="expand-button">
-    <a href="#skills-container"><img (mouseover)="bluegreenColor()" (mouseleave)="whiteColor()" src="./assets/img/icons/{{ img }}" alt=""></a>
-    
+
 </div>

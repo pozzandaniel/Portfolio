@@ -10,6 +10,8 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { AboutComponent } from './about/about.component';
 import { ContactSectionComponent } from './contact-section/contact-section.component';
 import { FooterSectionComponent } from './footer-section/footer-section.component';
+import { ImprintComponent } from './imprint/imprint.component';
+import { ContainerComponent } from './container/container.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { FooterSectionComponent } from './footer-section/footer-section.componen
     PortfolioComponent,
     AboutComponent,
     ContactSectionComponent,
-    FooterSectionComponent
+    FooterSectionComponent,
+    ImprintComponent,
+    ContainerComponent
   ],
   imports: [
     BrowserModule,

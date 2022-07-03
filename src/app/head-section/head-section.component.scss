@@ -1,5 +1,11 @@
 
 .container{
+    height: 90vh;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+
+.top-case{
     background-color: rgba(0, 0, 0, 0.7);
     display: flex;
     justify-content: space-evenly;
@@ -9,7 +15,6 @@
     font-size: 64px;
     line-height: 90px;
     box-sizing: border-box;
-    margin-top: 40px;
     
 
     .link-box{
