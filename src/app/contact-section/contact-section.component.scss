@@ -6,29 +6,33 @@
     align-items: center;
     padding-top: 120px;
     padding-bottom: 120px;
-    h2{
-        margin-top: 0;
-        margin-bottom: 10px;
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 64px;
-        line-height: 90px;
-        color: #2EFCD8;
-    }
-    p{  
-        margin-top: 5px;
+    div{
         margin-bottom: 20px;
-        color: white;
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 44px;
-        opacity: 0.66;
-
-        span{
+        h2{
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 64px;
+            line-height: 90px;
             color: #2EFCD8;
+        }
+
+        p{  
+            margin-top: 5px;
+            margin-bottom: 20px;
+            color: white;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 44px;
+            opacity: 0.66;
+    
+            span{
+                color: #2EFCD8;
+            }
         }
     }
 
@@ -47,6 +51,8 @@
             opacity: 0.66;
             margin-top: 20px;
             margin-bottom: 20px;
+            padding: 10px;
+            box-sizing: border-box;
         }
         textarea{
             background-color: #1A1A1A;
@@ -57,6 +63,8 @@
             resize: none;
             margin-top: 12px;
             margin-bottom: 20px;
+            padding: 10px;
+            box-sizing: border-box;         /* Opera/IE 8+ */
         }
         label{
             font-family: 'Inter';
