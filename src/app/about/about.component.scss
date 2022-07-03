@@ -55,8 +55,8 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            margin-left: 80px;
-            margin-right: 80px;
+            margin-left: 20px;
+            margin-right: 20px;
             margin-top: 80px;
 
             .img-container{
@@ -81,6 +81,7 @@
             }
 
             p{
+                height: 170px;
                 font-family: 'Inter';
                 font-weight: 400;
                 font-size: 18px;

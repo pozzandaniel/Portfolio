@@ -10,19 +10,19 @@ export class AboutComponent implements OnInit {
   aboutBox = [
     new BottomBox('./assets/img/icons/walk.png', 
     'MY JOURNEY BEGAN',
-    'as a product manager in an industrial company. Early on, I got the chance to collaborate in multiple IT and digitalization projects.'),
+    'as a food specialist, I have always been keen on nutrinional science. So I decided to study Food Technology and make of my passion a job'),
 
     new BottomBox('./assets/img/icons/heart.png', 
-    'MY JOURNEY BEGAN',
-    'as a product manager in an industrial company. Early on, I got the chance to collaborate in multiple IT and digitalization projects.'),
+    'MY FIRST EXPERIENCES',
+    'I started to work in food industries and to develop my knowledge about processes and engines. This contact with the technology inspired me and give me a better hope for the future'),
 
     new BottomBox('./assets/img/icons/search.png', 
-    'MY JOURNEY BEGAN',
-    'as a product manager in an industrial company. Early on, I got the chance to collaborate in multiple IT and digitalization projects.'),
+    'SEARCHING MY WAY',
+    'I have always been fascinated of computers, since I got my first windows 95. I had my first contact with programming during a course of Excel and I understood that programming was for me something special'),
 
     new BottomBox('./assets/img/icons/airplane.png', 
-    'MY JOURNEY BEGAN',
-    'as a product manager in an industrial company. Early on, I got the chance to collaborate in multiple IT and digitalization projects.'),
+    'FOR THE FUTURE',
+    'I only have a certainty, I will start my new journey as software developer and I will do that for many years!'),
   ];
   
   constructor() { }
