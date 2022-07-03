@@ -7,10 +7,14 @@
     justify-content: center;
     align-items: center;
     .top-row{
+        width: 80%;
+        box-sizing: border-box;
         display: flex;
         justify-content: center;
         align-items: center;
         color: white;
+        border-bottom: 3px solid #2DFCD8;
+        padding-bottom: 120px;
         img{
             height: 254px;
             width: 254px;
@@ -18,8 +22,70 @@
             border-radius: 126px;
         }
         .text-box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-right: 160px;
+            margin-left: 160px;
             h2{
-                font-family: ;
+                font-family: 'Inter';
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 40px;
+            }
+            p{
+                font-family: 'Inter';
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 28px;
+                text-align: center;
+            }
+        }
+    }
+
+    .bottom-row{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .bottom-box{
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-left: 80px;
+            margin-right: 80px;
+            margin-top: 80px;
+
+            .img-container{
+                width: 80px;
+                height: 80px;
+                background-color: #2DFCD8;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 40px;
+                img{
+                    height: 20px;
+                    width: 20px;
+                }
+            }
+
+            h4{
+                font-family: 'Inter';
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 28px;
+            }
+
+            p{
+                font-family: 'Inter';
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 28px;  
+                text-align: center;
             }
         }
     }

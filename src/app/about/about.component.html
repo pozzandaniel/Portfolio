@@ -1,32 +1,18 @@
-<div class="container">
+<div id="about" class="container">
     <div class="top-row">
         <img src="./assets/img/photo.jpg" alt="">
         <div class="text-box">
-            <h2>About Me</h2>
+            <h2>About Me.</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, odio. Distinctio aperiam possimus </p>
         </div>
     </div>
     <div class="bottom-row">
-        <div class="bottom-box">
-            <img>
-            <h4></h4>
-            <p></p>
+        <div *ngFor="let i of [0, 1, 2, 3]" class="bottom-box">
+            <div class="img-container"><img src="{{ aboutBox[i]['path'] }}"></div>
+            <h4>{{ aboutBox[i]['h4'] }}</h4>
+            <p>{{ aboutBox[i]['p'] }}</p>
         </div>
-        <div class="bottom-box">
-            <img>
-            <h4></h4>
-            <p></p>
-        </div>
-        <div class="bottom-box">
-            <img>
-            <h4></h4>
-            <p></p>
-        </div>
-        <div class="bottom-box">
-            <img>
-            <h4></h4>
-            <p></p>
-        </div>
+       
   
     </div>
 </div>
