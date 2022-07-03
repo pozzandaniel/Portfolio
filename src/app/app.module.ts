@@ -12,6 +12,7 @@ import { ContactSectionComponent } from './contact-section/contact-section.compo
 import { FooterSectionComponent } from './footer-section/footer-section.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { ContainerComponent } from './container/container.component';
+import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ContainerComponent } from './container/container.component';
     ContactSectionComponent,
     FooterSectionComponent,
     ImprintComponent,
-    ContainerComponent
+    ContainerComponent,
+    LegalNoticeComponent
   ],
   imports: [
     BrowserModule,
