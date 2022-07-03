@@ -1,0 +1,94 @@
+.container{
+    background-color: rgba(0, 0, 0, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    h2{
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 90px;
+        color: #2EFCD8;
+    }
+    p{  
+        margin-top: 5px;
+        margin-bottom: 20px;
+        color: white;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 44px;
+        opacity: 0.66;
+
+        span{
+            color: #2EFCD8;
+        }
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        justify-content: center;
+        input{
+            width: 612px;
+            height: 39px;
+            background-color: #1A1A1A;
+            border: none;
+            outline: none;
+            color: #F2F2F2;
+            opacity: 0.66;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        textarea{
+            background-color: #1A1A1A;
+            border: none;
+            outline: none;
+            color: #F2F2F2;
+            opacity: 0.66;
+            resize: none;
+            margin-top: 12px;
+            margin-bottom: 20px;
+        }
+        label{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 20px;
+            color: #F2F2F2;
+        }
+        div{
+            display: flex;
+            justify-content: flex-end;
+            button{
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 800;
+                font-style: 14px;
+                line-height: 17px;
+                text-align: center;
+                color: #2DFCD8;
+                border: 2px inset #2DFCD8;
+                background-color: transparent;
+                width:157px;
+                height: 60px;
+                cursor: pointer;
+                &:hover{
+                    color: white;
+                    opacity: 0.96;
+                    background-color: #2DFCD8;
+                }
+
+            }
+        }
+    }
+}
