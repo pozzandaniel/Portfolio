@@ -100,3 +100,46 @@
         }
     }
 }
+
+// Responsive under 700px
+
+@media (max-width:700px){
+    .container {
+        div {
+            width: 343px;
+            h2 {
+                font-size: 32px;
+                font-family: 'Roboto';
+                font-weight: 700;
+                line-height: 30px;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 30px;
+                font-family: 'Roboto';
+
+            }
+        }
+
+        form {
+            input {
+                width: 343px
+            }
+
+            label {
+                font-family: 'Roboto';
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 20px;
+                
+            }
+
+            div {
+                button {
+                    width: 128px;
+                }
+            }
+        }
+    }
+}

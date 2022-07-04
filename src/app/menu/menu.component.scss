@@ -4,6 +4,13 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+    .menu-icon {
+        width:24px;
+        height: 19px;
+        display: none;
+        cursor: pointer;
+    }
 
     .logo{
         height: 30px;
@@ -44,4 +51,56 @@ nav{
     margin-right: 160px;
 }
 
+// Responsive under 800px
+@media(max-width: 800px){
+    nav {
+        .logo {
+            padding-left: 40px;
+        }
 
+        .list-case {
+            padding-right: 40px;
+        }
+    }
+}
+
+// Responsive under 650px
+
+@media (max-width: 650px){
+    nav {
+        height: 64px;
+        .logo {
+            padding-left: 60px;
+        }
+
+        .menu-icon {
+            display: flex;
+            padding-right: 60px;
+        }
+
+        .list-case {
+           position: fixed;
+           flex-direction: column;
+           right: 0;
+           top: 70px;
+           padding-left: 0;
+           padding-right: 0;
+           margin-top: 5px;
+           margin-bottom: 5px;
+           right: 60px;
+           background-color: rgba(30, 30, 30, 0.8);
+           padding:4px;
+           li {
+             text-align: end;
+             margin-left: 0;
+             margin-right: 0;
+             margin-bottom: 5px;
+
+             a {
+                font-family: 'Roboto';
+                font-size: 16px;
+             }
+           }
+        }
+    }
+}

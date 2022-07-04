@@ -61,3 +61,86 @@
     }
 }
 
+// Responsive under 700px
+@media (max-width:700px){
+    #skills-container{
+
+        .skills-row{
+
+            .skill-box {
+                height: 100px;
+                width: 140px;
+            }
+        }
+
+    }
+}
+
+// Responsive under 550px
+@media (max-width: 550px){
+    #skills-container {
+
+        .skills-row {
+
+            
+            .skill-box {
+                height: 71px;
+                width: 108px;
+                
+                p {
+                    font-size: 14px;
+                }
+                .logo-container {
+                    width: 35px;
+                    height: 35px;
+
+                    img {
+                        width:16px;
+                        height: 18px;
+                        
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+// Responsive under 400px
+@media(max-width: 400px){
+    #skills-container {
+        height: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        .skills-row {
+            flex-direction: column;
+
+            .skill-box {
+                margin-bottom: 60px;
+                height: 120px;
+                width: 183px;
+
+                p {
+                    font-size: 18px;
+                    line-height: 28px;  
+                }
+
+                .logo-container {
+                    width: 60px;
+                    height: 60px;
+
+                    img {
+                        width: 24px;
+                        height: 29px;
+                    }
+                }
+            }
+            
+        }
+    }
+}

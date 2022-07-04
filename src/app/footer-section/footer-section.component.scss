@@ -39,3 +39,20 @@ footer{
 .borderTop{
     border-top: 2px solid rgba(0, 0, 0, 0.9);
 }
+
+// Responsive under 850px
+
+@media (max-width: 850px){
+    footer {
+        margin-left: 0;
+        margin-right: 0;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        height: 111px;
+
+        .logo {
+            height: 29px;
+            width: 29px;
+        }
+    }
+}
