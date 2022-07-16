@@ -1,16 +1,39 @@
 <div class="container" id="portfolio">
-    <p>My Work</p>
-    <div class="filter-box">
+    <p data-aos="zoom-in">My Work</p>
+    <div data-aos="zoom-in" class="filter-box">
         <div (click)="getAll()"  (click)="toggleAllIsActive()" [@toggle]="allIsActive" class="filter-element">All</div>
         <div (click)="getAngular()" (click)="toggleAngularIsActive()" [@toggle]="angularIsActive" class="filter-element">Angular</div>
         <div (click)="getJavascript()" (click)="toggleJavascriptIsActive()" [@toggle]="javascriptIsActive" class="filter-element">Java Script</div>
     </div>
     <div class="projects-box">
-        <div class="project-card" *ngIf="javascript" @fadeInOutLeft >{{ projects[0].title }}</div>
-        <div class="project-card" *ngIf="javascript" @fadeInOutLeft>{{ projects[1].title }}</div>   
+        <div data-aos="fade-right" class="project-card" *ngIf="javascript" @fadeInOutLeft>
+            <img src="/assets/img/elpolloloco.png">
+            <div class="dialog-img">
+                <p class="p-rosa">{{ projects[0].title }}</p>
+                <p class="p-black" >{{ projects[0].sentence }}</p>
+                <a href="http://daniel-pozzan.developerakademie.net/El_pollo_loco/"><button>Try out</button></a>
+            </div>
+        </div>
+        <div  data-aos="fade-left" class="project-card" *ngIf="javascript" @fadeInOutLeft>
+            <img src="/assets/img/join.png">
+            <div class="dialog-img">
+                <p class="p-rosa">{{ projects[1].title }}</p>
+                <p class="p-black" >{{ projects[0].sentence }}</p>
+            </div>
+        </div>   
     </div>
     <div class="projects-box">
-        <div class="project-card" *ngIf="angular" @fadeInOutRight>{{ projects[2].title }}</div>
-        <div class="project-card" *ngIf="angular" @fadeInOutRight>{{ projects[3].title }}</div>
+        <div data-aos="fade-right" class="project-card" *ngIf="angular" @fadeInOutRight>
+            <img src="/assets/img/ringoffire.png">
+            <div class="dialog-img">
+                <p class="p-rosa">{{ projects[2].title }}</p>
+                <p class="p-black" >{{ projects[0].sentence }}</p>
+                <a href="http://daniel-pozzan.developerakademie.net/RingOfFire/"><button>Try out</button></a>
+
+            </div>
+        </div>
+        <div data-aos="fade-left" class="project-card" *ngIf="angular" @fadeInOutRight>
+
+        </div>
     </div>
 </div>

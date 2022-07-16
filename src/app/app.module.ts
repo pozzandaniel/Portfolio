@@ -31,7 +31,7 @@ import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

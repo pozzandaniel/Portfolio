@@ -1,13 +1,13 @@
 <div id="about" class="container">
     <div class="top-row">
-        <img src="./assets/img/photo.jpg" alt="">
-        <div class="text-box">
+        <img data-aos="fade-right" src="./assets/img/photo.jpg" alt="">
+        <div data-aos="fade-left" class="text-box">
             <h2>About Me.</h2>
             <p>"I'm a food lover with a big passion for software developing and logical thinking. My mindset is to give my best, to be collaborative with my team and to be ready to face new challenges"</p>
         </div>
     </div>
     <div class="bottom-row">
-        <div *ngFor="let i of [0, 1, 2, 3]" class="bottom-box">
+        <div  data-aos="zoom-in-up"  *ngFor="let i of [0, 1, 2, 3]" class="bottom-box">
             <div class="img-container"><img src="{{ aboutBox[i]['path'] }}"></div>
             <h4>{{ aboutBox[i]['h4'] }}</h4>
             <p>{{ aboutBox[i]['p'] }}</p>

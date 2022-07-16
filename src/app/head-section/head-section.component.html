@@ -1,15 +1,15 @@
-<div class="container">
+<div class="container" >
     <div id="headSection" class="top-case">
-        <div class="link-box">
-            <p>Hi,<br> I'm <span class="purple">Daniel</span> Pozzan<br> Front End develop<span class="bluegreen">e</span>r</p>
-            <a href="#contact"><button>Contact me</button></a>
+        <div @fadeIn class="link-box">
+            <p  *ngIf="visible" class="left">Hi,<br> I'm <span class="purple"> Daniel</span> Pozzan<br> Front End develop<span class="bluegreen">e</span>r</p>
+            <a    href="#contact"><button *ngIf="visible" class="left" >Contact me</button></a>
         </div>
-        <div class="right-box">
+        <div  class="right-box">
             <img src="./assets/img/photo.jpg" alt="">
         </div>
         
     </div>
-    <div class="expand-button">
+    <div  class="expand-button">
         <a href="#skills-container"><img (mouseover)="bluegreenColor()" (mouseleave)="whiteColor()" src="./assets/img/icons/{{ img }}" alt=""></a>
         
     </div>
