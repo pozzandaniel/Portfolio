@@ -6,6 +6,7 @@
     align-items: center;
     padding-top: 120px;
     padding-bottom: 120px;
+    overflow: hidden;
     div{
         margin-bottom: 20px;
         h2{
@@ -140,6 +141,26 @@
                     width: 128px;
                 }
             }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .contact-headline {
+        width: 300px !important;
+    }
+
+    form {
+        input {
+            width: 300px !important;
+        }
+
+        textarea {
+            width: 300px !important;
+        }
+
+        .button-box {
+            width: 300px !important;
         }
     }
 }

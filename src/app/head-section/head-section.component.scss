@@ -20,9 +20,7 @@
     box-sizing: border-box;
     
 
-    .link-box{
-        // width: 715px;
-        // height: 278px;
+    .left-box{
         margin-left: 30px;
 
         button{
@@ -53,7 +51,9 @@
             width: 500px;
             height: 500px;
             object-fit: cover;
+            object-position: center;
             border-radius: 100%;
+
         }
 
     }
@@ -116,7 +116,7 @@
             margin-right: 0;
         }
 
-        .link-box{
+        .left-box{
             margin-left: 0;
 
             button{

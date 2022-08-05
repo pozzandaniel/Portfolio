@@ -1,10 +1,10 @@
 
 <nav [class.marginLeftRight] = "borderMode">
-    <a routerLink="/"><img (mouseover)="purpleColor()" (mouseleave)="whiteColor()" class="logo" src="./assets/img/{{ img }}" alt=""></a>
-    <ul class="list-case">
+    <a routerLink="/"><img (mouseover)="purpleColor()" (mouseleave)="whiteColor()" id="logoId" class="logo" src="./assets/img/{{ img }}" alt=""></a>
+    <ul id="listCase" class="list-case">
         <li><a routerLink="/">HOME</a></li>
         <li><a href="#about">ABOUT</a></li>
         <li><a href="#portfolio">PORTFOLIO</a></li>
     </ul>
-    <img class="menu-icon" src="./assets/img/icons/menu-icon.png" alt="">
+    <img (click)="openMenu()" class="menu-icon bluegreen-color" id="menuIcon" src="./assets/img/icons/menu-icon.png" alt="">
 </nav>

@@ -76,31 +76,71 @@ nav{
         .menu-icon {
             display: flex;
             padding-right: 60px;
+
+            &:hover{
+                color: #fa2759;
+            }
         }
 
         .list-case {
-           position: fixed;
-           flex-direction: column;
-           right: 0;
-           top: 70px;
-           padding-left: 0;
-           padding-right: 0;
-           margin-top: 5px;
-           margin-bottom: 5px;
-           right: 60px;
-           background-color: rgba(30, 30, 30, 0.8);
-           padding:4px;
-           li {
-             text-align: end;
-             margin-left: 0;
-             margin-right: 0;
-             margin-bottom: 5px;
+            flex-direction: column;
+            position: absolute;
+            right: 0;
+            top: 64px;
+            padding-right: 0;
+            padding-left: 0;
+            padding-top: 40px;
+            margin-top: 0;
+            margin-right: 10px;
+            border: 2px inset #2DFCD8;
+            background-color: rgba(0, 0, 0, 1);
+           
 
-             a {
-                font-family: 'Roboto';
-                font-size: 16px;
-             }
-           }
+            li {
+                margin-bottom: 40px;
+
+                a {
+                    color: #2DFCD8;
+                }
+            }
+
         }
+
+        // .list-case {
+        //    position: fixed;
+        //    flex-direction: column;
+        //    right: 0;
+        //    top: 70px;
+        //    padding-left: 0;
+        //    padding-right: 0;
+        //    margin-top: 5px;
+        //    margin-bottom: 5px;
+        //    right: 60px;
+        //    background-color: rgba(30, 30, 30, 0.8);
+        //    padding:4px;
+        //    li {
+        //      text-align: end;
+        //      margin-left: 0;
+        //      margin-right: 0;
+        //      margin-bottom: 5px;
+
+        //      a {
+        //         font-family: 'Roboto';
+        //         font-size: 16px;
+        //      }
+        //    }
+        // }
     }
+}
+
+.translate-200px {
+    transform: translateX(200px);
+}
+
+.d-none {
+    display: none !important;
+}
+
+.bluegreen-color {
+    filter: invert(69%) sepia(100%) saturate(335%) hue-rotate(111deg) brightness(102%) contrast(98%);
 }

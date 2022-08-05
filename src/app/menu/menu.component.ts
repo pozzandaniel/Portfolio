@@ -8,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class MenuComponent implements OnInit {
   path = ['logo.png', 'logohover.png'];
   img = this.path[0];
+  menuOpened = true;
   @Input() borderMode = false;
 
   constructor() { }
@@ -22,5 +23,21 @@ export class MenuComponent implements OnInit {
   whiteColor(){
     this.img = this.path[0];
   }
+
+  openMenu() {
+    if(this.menuOpened == false) {
+      document.getElementById('listCase')?.classList.remove('translate-200px');
+      document.getElementById('listCase')?.classList.remove('d-none');
+      document.getElementById('menuIcon')?.classList.add('bluegreen-color');
+      this.menuOpened = true;
+    } else {
+      document.getElementById('listCase')?.classList.add('translate-200px');
+      document.getElementById('listCase')?.classList.add('d-none');
+      document.getElementById('menuIcon')?.classList.remove('bluegreen-color');
+      this.menuOpened = false;
+    }
+  }
+
+
 
 }
