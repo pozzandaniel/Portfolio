@@ -7,33 +7,52 @@
     </div>
     <div class="projects-box">
         <div data-aos="fade-right" class="project-card" *ngIf="javascript" @fadeInOutLeft>
-            <img src="/assets/img/elpolloloco.png">
+            <img src="/assets/img/el_pollo_loco.jpg">
             <div class="dialog-img">
                 <p class="p-rosa">{{ projects[0].title }}</p>
                 <p class="p-black" >{{ projects[0].sentence }}</p>
-                <a href="http://daniel-pozzan.developerakademie.net/El_pollo_loco/"><button>Try out</button></a>
+                <div class="button-cnt">
+                    <a href="https://el-pollo-loco.daniel-pozzan.com"><button>Try out</button></a>
+                    <a href="https://github.com/pozzandaniel/El-pollo-loco"><button>Github</button></a>
+                </div>            
             </div>
         </div>
         <div  data-aos="fade-left" class="project-card" *ngIf="javascript" @fadeInOutLeft>
             <img src="/assets/img/join.png">
             <div class="dialog-img">
                 <p class="p-rosa">{{ projects[1].title }}</p>
-                <p class="p-black" >{{ projects[0].sentence }}</p>
+                <p class="p-black" >{{ projects[1].sentence }}</p>
+                <div class="button-cnt">
+                    <a href="https:join.daniel-pozzan.com"><button>Try out</button></a>
+                    <a href=""><button>Github</button></a>
+                </div>
             </div>
         </div>   
     </div>
     <div class="projects-box">
         <div data-aos="fade-right" class="project-card" *ngIf="angular" @fadeInOutRight>
-            <img src="/assets/img/ringoffire.png">
+            <img src="/assets/img/ringfire.jpg">
             <div class="dialog-img">
                 <p class="p-rosa">{{ projects[2].title }}</p>
-                <p class="p-black" >{{ projects[0].sentence }}</p>
-                <a href="http://daniel-pozzan.developerakademie.net/RingOfFire/"><button>Try out</button></a>
+                <p class="p-black" >{{ projects[2].sentence }}</p>
+                <div class="button-cnt">
+                    <a href="https://ring-of-fire.daniel-pozzan.com"><button>Try out</button></a>
+                    <a href="https://github.com/pozzandaniel/Ring-of-fire"><button>Github</button></a>
+                </div>
 
             </div>
         </div>
         <div data-aos="fade-left" class="project-card" *ngIf="angular" @fadeInOutRight>
+            <img src="/assets/img/prtfolio.jpg">
+            <div class="dialog-img">
+                <p class="p-rosa">{{ projects[3].title }}</p>
+                <p class="p-black" >{{ projects[3].sentence }}</p>
+                <div class="button-cnt">
+                    <a href="https://daniel-pozzan.com"><button>Try out</button></a>
+                    <a href="https://github.com/pozzandaniel/Portfolio"><button>Github</button></a>
+                </div>
 
+            </div>
         </div>
     </div>
 </div>

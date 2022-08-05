@@ -40,20 +40,20 @@ import { trigger, state, style, animate, transition, keyframes } from '@angular/
     trigger('fadeInOutLeft', [
 
       transition(':leave', [
-        style({transform: 'scale(1.0) translateX(0)', opacity: 1}),
-        animate('1s ease-out', keyframes([
-          style({transform:'scale(1.02) translateX(0)',opacity: 1, offset:0.2}),
-          style({transform:'scale(1.04) translateX(0)',opacity:0.5, offset:0.4}),
-          style({transform: 'scale(1.04) translateX(-400px)',opacity:0,  offset:1})
+        style({transform: 'translateX(0)', opacity: 1}),
+        animate('0.5s ease-out', keyframes([
+          style({transform:'translateX(0)',opacity: 1, offset:0.2}),
+          style({transform:'translateX(0)',opacity:0.5, offset:0.4}),
+          style({transform: 'translateX(-400px)',opacity:0,  offset:1})
         ]))
       ]),
 
       transition(':enter', [
-        style({transform: 'scale(1.04) translateX(-400px)', opacity:0}),
-        animate('1s ease-in-out', keyframes([
-          style({transform: 'scale(1.04) translateX(-400px)', opacity:0, offset: 0.2}),
-          style({trasnform: 'scale(1.02) translateX(0)', opacity:0.5,  offset: 0.4}),
-          style({transform: 'scale(1) translateX(0)',opacity:1,  offset: 1})
+        style({transform: 'translateX(-400px)', opacity:0}),
+        animate('0.5s ease-in-out', keyframes([
+          style({transform: 'translateX(-400px)', opacity:0, offset: 0.2}),
+          style({trasnform: 'translateX(0)', opacity:0.5,  offset: 0.4}),
+          style({transform: 'translateX(0)',opacity:1,  offset: 1})
         ]))
       ])
     ]),
@@ -66,9 +66,9 @@ import { trigger, state, style, animate, transition, keyframes } from '@angular/
 
 export class PortfolioComponent implements OnInit {
   elPolloLoco = new Project('El Pollo Loco', 'Javascript', 'JavaScript - based jump and run game.');
-  join = new Project('Join', 'Javascript', '');
-  ringOfFire = new Project('Ring Of Fire', 'Angular', '');
-  casual = new Project('Casual', 'Angular', '');
+  join = new Project('Join', 'Javascript', 'Javascript - a business SCRUM based app.');
+  ringOfFire = new Project('Ring Of Fire', 'Angular', 'Angular - the popular cards game.');
+  portfolio = new Project('My Portfolio', 'Angular', 'Angular - my personal website.');
   javascript:boolean = true;
   angular:boolean = true;
 
@@ -79,7 +79,7 @@ export class PortfolioComponent implements OnInit {
     this.elPolloLoco,
     this.join,
     this.ringOfFire,
-    this.casual
+    this.portfolio
   ]
 
   allIsActive:string = 'active';
@@ -119,13 +119,19 @@ export class PortfolioComponent implements OnInit {
   }
 
   getJavascript(){
-    this.angular = false; 
     this.javascript = true;
+    setTimeout(()=> {
+      this.angular = false; 
+
+    }, 500)
   }
 
   getAngular(){
-    this.javascript = false;
     this.angular = true;
+    setTimeout(() => {
+      this.javascript = false;
+
+    }, 500)
   }
 
   getAll(){

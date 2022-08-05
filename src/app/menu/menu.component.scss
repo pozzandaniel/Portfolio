@@ -75,6 +75,16 @@ nav{
     margin-right: 160px;
 }
 
+// Responsive under 1200px
+
+@media (max-width: 1200px){
+    nav {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+ 
+    }
+}
+
 // Responsive under 800px
 @media(max-width: 800px){
     nav {
@@ -135,30 +145,6 @@ nav{
 
         }
 
-        // .list-case {
-        //    position: fixed;
-        //    flex-direction: column;
-        //    right: 0;
-        //    top: 70px;
-        //    padding-left: 0;
-        //    padding-right: 0;
-        //    margin-top: 5px;
-        //    margin-bottom: 5px;
-        //    right: 60px;
-        //    background-color: rgba(30, 30, 30, 0.8);
-        //    padding:4px;
-        //    li {
-        //      text-align: end;
-        //      margin-left: 0;
-        //      margin-right: 0;
-        //      margin-bottom: 5px;
-
-        //      a {
-        //         font-family: 'Roboto';
-        //         font-size: 16px;
-        //      }
-        //    }
-        // }
     }
 }
 
