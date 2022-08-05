@@ -19,6 +19,30 @@ nav{
         cursor: pointer;
     }
 
+    .list-case-responsive {
+        display: none;
+
+        li {
+            list-style: none;
+            margin-left: 15px;
+            margin-right: 15px;
+            cursor: pointer;
+
+            a{
+                text-decoration: none;
+                color: white;
+                font-family: 'Inter';
+                font-weight: 500;
+
+                &:hover{
+                    color: #fa2759;
+                }
+            }
+
+           
+        }
+    }
+
     .list-case{
         padding-right: 120px;
         display: flex;
@@ -83,6 +107,11 @@ nav{
         }
 
         .list-case {
+            display: none;
+        }
+
+        .list-case-responsive {
+            display: block;
             flex-direction: column;
             position: absolute;
             right: 0;

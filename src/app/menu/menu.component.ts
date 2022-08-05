@@ -8,7 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class MenuComponent implements OnInit {
   path = ['logo.png', 'logohover.png'];
   img = this.path[0];
-  menuOpened = true;
+  menuOpened = false;
   @Input() borderMode = false;
 
   constructor() { }
