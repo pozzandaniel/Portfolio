@@ -1,3 +1,7 @@
+.d-none {
+    display: none;
+}
+
 .container{
     background-color: rgba(0, 0, 0, 1);
     display: flex;
@@ -99,6 +103,12 @@
 
             }
         }
+    }
+
+    .sended_email {
+        color: #2DFCD8;
+        font-size: 1.5em;
+        text-align: center;
     }
 }
 

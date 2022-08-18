@@ -13,6 +13,9 @@ footer{
             cursor: pointer;
             height: 34px;
             width: 34px;
+            &:hover {
+                filter: invert(69%) sepia(100%) saturate(335%) hue-rotate(111deg) brightness(102%) contrast(98%);
+            }
         }
     }
     .left-case{

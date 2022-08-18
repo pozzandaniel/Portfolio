@@ -13,11 +13,12 @@ import { AbsoluteSourceSpan } from '@angular/compiler';
         query('.left', [
           style({opacity: 0, transform: 'translateX(-300px)'}),
           stagger(1500, [
-            animate('1500ms', style({
+            animate('250ms', style({
               opacity:1, transform: 'translateX(0)'
             }))
           ])
         ])
+
       ])
     ])
   ],

@@ -12,4 +12,9 @@ export class ContactSectionComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  sendSuccess() {
+    document.getElementById('sendedEmail')?.classList.remove('d-none');
+    alert('Thank you for your message! I will get in contact with you as soon as possible.');
+  }
+
 }
