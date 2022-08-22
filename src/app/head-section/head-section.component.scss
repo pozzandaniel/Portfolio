@@ -7,7 +7,6 @@
     justify-content: space-around;
     padding-top: 86px;
     position: relative;
-    box-sizing: border-box;
 }
 
 canvas {
@@ -62,6 +61,8 @@ canvas {
 
     .right-box{
         margin-right: 30px;
+        display: flex;
+        align-items: center;
         img {
             width: 500px;
             height: 500px;
@@ -81,6 +82,7 @@ canvas {
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 1;
+   
 
     img {
         height: 54px;
@@ -126,7 +128,11 @@ canvas {
 
 // Responsive under 900px
 
-@media (max-width:900px){
+@media (max-width:650px){
+    .container {
+        height: unset;
+    }
+
     .top-case{
         flex-direction: column-reverse;
         align-items: center;
@@ -144,23 +150,29 @@ canvas {
     }
 }
 
-@media (max-width:900px) and (max-height:1300px){
+@media (max-width:850px) and (max-height:1300px){
     .top-case{
         line-height: 45px;
         font-size: 32px;
         .right-box {
             img {
-                height: 280px;
-                width: 280px;
+                height: 280px !important;
+                width: 280px !important;
             }
         }
     }
 }
 
 @media (max-height: 750px){
-    // .container{
-    //     height: auto;
-    // }
+   .top-case {
+        .right-box {
+            img {
+
+                width: 400px;
+                height: 400px;
+            }
+        }
+   }
 
     .expand-button{
         margin-top: 30px;
