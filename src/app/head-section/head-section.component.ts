@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import {trigger, state, style, animate, transition, keyframes, query, stagger} from '@angular/animations';
-import { AbsoluteSourceSpan } from '@angular/compiler';
+import { Component, HostListener, OnInit } from '@angular/core';
+import { trigger, style, animate, transition, query, stagger } from '@angular/animations';
+import { Background } from 'src/models/background';
 
 
 
@@ -26,6 +26,14 @@ import { AbsoluteSourceSpan } from '@angular/compiler';
   styleUrls: ['./head-section.component.scss']
 })
 export class HeadSectionComponent implements OnInit {
+  canvas;
+  home;
+  ctx;
+  width;
+  height;
+  background;
+  animationFrame;
+
   path = ['down.png', 'downhover.png'];
   img = this.path[0];
   visible= false;
@@ -33,6 +41,15 @@ export class HeadSectionComponent implements OnInit {
 
   ngOnInit(): void {
     this.visible = true;
+    this.canvas = document.getElementById('canvas') as HTMLCanvasElement;
+    this.home = document.getElementById('home');
+    this.ctx = this.canvas.getContext('2d');
+    this.canvas.width = this.home.offsetWidth;
+    this.canvas.height = this.home.offsetHeight;
+    this.background = new Background(this.ctx, this.canvas.width, this.canvas.height);
+    this.background.animate();
+    console.log('offsetwidth is: ', this.home.offsetWidth);
+    
    
    
   }
@@ -45,6 +62,15 @@ export class HeadSectionComponent implements OnInit {
     this.img = this.path[0];
   }
 
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
+    this.background.cancelFrame();
+    this.canvas.width = this.home.offsetWidth;
+    this.canvas.height = this.home.offsetHeight;
+    this.background = new Background(this.ctx, this.canvas.width, this.canvas.height);
+    this.background.animate();
+    console.log('offsetwidth is: ', this.home.offsetWidth);
+  }
   
 
 }
